@@ -5,6 +5,8 @@ import TechMarquee from "./components/TechMarquee";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Research from "./components/Research";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SocialSidebar from "./components/SocialSidebar";
@@ -92,6 +94,8 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Experience />
+      <Research />
       <Contact />
       <Footer />
     </div>

@@ -6,6 +6,7 @@ import Project5 from "../assets/images/portfolio.png";
 import Project6 from "../assets/images/skyridge.png";
 import Project7 from "../assets/images/mccann.png";
 import Project8 from "../assets/images/property-file.png";
+import paperImage from "../assets/images/paper.jpg";
 export const PortfolioContent = {
   about: {
     tag: "About Me",
@@ -236,6 +237,67 @@ export const PortfolioContent = {
     ],
   },
 
+  experience: {
+    tag: "Career",
+    title: "Work",
+    titleHighlight: "Experience",
+    description:
+      "A timeline of my professional journey building scalable applications, managing databases, and delivering full-stack solutions.",
+    summary: [
+      { number: "2+", label: "Years Experience" },
+      { number: "3", label: "Companies" },
+      { number: "3", label: "Roles Held" },
+    ],
+    items: [
+      {
+        id: 1,
+        role: "Junior Software Engineer",
+        company: "MakTech Solution Limited",
+        period: "September 2025 – Present",
+        location: "On-site",
+        current: true,
+        highlights: [
+          "Developed and maintained backend systems and core application features",
+          "Integrated AI functionalities into business applications",
+          "Managed deployment, hosting, and server configurations",
+          "Built CI/CD pipelines to streamline development and deployment",
+        ],
+        tags: ["Node.js", "PostgreSQL", "CI/CD", "AI Integration", "DevOps"],
+      },
+      {
+        id: 2,
+        role: "Software Engineer",
+        company: "Adplay Technology Limited",
+        period: "February 2025 – August 2025",
+        location: "On-site",
+        current: false,
+        highlights: [
+          "Maintained and enhanced existing project features and backend functionalities using C# and ASP.NET",
+          "Managed MSSQL databases, including query optimization, indexing, job scheduling, and large data handling",
+          "Collaborated with senior developers and team members to solve technical challenges effectively",
+          "Participated in debugging, testing, and production issue resolution",
+        ],
+        tags: ["C#", "ASP.NET", "MSSQL", "Backend"],
+      },
+      {
+        id: 3,
+        role: "Backend Developer",
+        company: "Generative AI",
+        period: "September 2024 – January 2025",
+        location: "Remote",
+        current: false,
+        highlights: [
+          "Worked remotely as a full-stack developer, collaborating with team members through Slack",
+          "Developed and maintained web application features using React.js, Node.js, and PostgreSQL",
+        
+          "Participated in debugging, testing, and improving overall application performance",
+          "Contributed to project development following Agile and remote team workflows",
+        ],
+        tags: ["React.js", "Node.js", "PostgreSQL", "Agile", "Remote"],
+      },
+    ],
+  },
+
   projects: {
     tag: "Portfolio",
     title: "Featured",
@@ -403,6 +465,41 @@ export const PortfolioContent = {
     ],
   },
 
+  research: {
+    tag: "Academic",
+    title: "Research",
+    titleHighlight: "Publications",
+    description:
+      "Peer-reviewed research contributions in deep learning and medical image analysis.",
+    items: [
+      {
+        id: 1,
+        paperId: "1446",
+        title:
+          "WristNet: A Novel Deep Learning Approach for Detecting Fractures in Wrist X-ray Images",
+        venue:
+          "2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence and Networking (QPAIN 2026)",
+        location: "CUET, Chattogram, Bangladesh",
+        year: "2026",
+        type: "Conference Paper",
+        linkUrl: "https://ieeexplore.ieee.org/document/11545715",
+        imageUrl: paperImage,
+        highlights: [
+          "Presented research on deep learning-based wrist fracture detection from X-ray images",
+          "Contributed to AI model development and medical image analysis",
+          "Successfully presented at IEEE QPAIN 2026, organized by IEEE Photonics Society Bangladesh Chapter",
+        ],
+        tags: [
+          "Deep Learning",
+          "Medical Imaging",
+          "X-ray Analysis",
+          "Computer Vision",
+          "IEEE",
+        ],
+      },
+    ],
+  },
+
   socialSidebar: [
     {
       name: "GitHub",
@@ -476,6 +573,8 @@ export const PortfolioContent = {
       { label: "Home", href: "#home" },
       { label: "About", href: "#about" },
       { label: "Projects", href: "#projects" },
+      { label: "Experience", href: "#experience" },
+      { label: "Research", href: "#research" },
       { label: "Contact", href: "#contact" },
     ],
     copyright: "All rights reserved.",
@@ -488,6 +587,8 @@ export const PortfolioContent = {
       { label: "About", href: "#about" },
       { label: "Skills", href: "#skills" },
       { label: "Projects", href: "#projects" },
+      { label: "Experience", href: "#experience" },
+      { label: "Research", href: "#research" },
       { label: "Contact", href: "#contact" },
     ],
     cta: "Contact",

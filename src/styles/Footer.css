@@ -69,7 +69,8 @@
 }
 
 .footer-heart {
-  color: #ff6b6b;
+  color: #6c3cb0;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {

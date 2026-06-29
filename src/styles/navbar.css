@@ -113,7 +113,6 @@
   background: var(--accent);
   box-shadow: 0 0 20px var(--accent-glow);
   position: relative;
-
 }
 
 @keyframes pulseDot {
@@ -159,10 +158,10 @@
 .nav-links li a {
   position: relative;
   padding: 8px 16px;
-  color: var(--text-secondary);
+  color: #ffffff;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 10px;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -170,8 +169,8 @@
 }
 
 .nav-links li a:hover {
-  color: var(--text-primary);
-  background: rgba(186, 128, 255, 0.08);
+  color: #ffffff;
+  background: rgba(186, 128, 255, 0.12);
 }
 
 .link-underline {
@@ -302,6 +301,8 @@
     text-align: center;
     padding: 12px;
     font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
   }
 
   .nav-cta {

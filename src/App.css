@@ -168,6 +168,8 @@ body {
 .about,
 .skills-page,
 .projects,
+.experience,
+.research,
 .contact,
 .footer {
   position: relative;
@@ -178,6 +180,8 @@ body {
 .about,
 .skills-page,
 .projects,
+.experience,
+.research,
 .contact {
   background: transparent !important;
 }
