@@ -1,8 +1,11 @@
 import Project1 from "../assets/images/Api.png";
 import Project2 from "../assets/images/Auth.png";
-import Project3 from "../assets/images/block.jpg";
-import Project4 from "../assets/images/ecom.jpg";
+import Project3 from "../assets/images/block.png";
+import Project4 from "../assets/images/ecom.png";
 import Project5 from "../assets/images/portfolio.png";
+import Project6 from "../assets/images/skyridge.png";
+import Project7 from "../assets/images/mccann.png";
+import Project8 from "../assets/images/property-file.png";
 export const PortfolioContent = {
   about: {
     tag: "About Me",
@@ -246,53 +249,73 @@ export const PortfolioContent = {
     items: [
       {
         id: 1,
-        title: "Api Tester v2.0",
-        description:
-          "A powerful API testing tool with intuitive interface, request history, and response visualization",
+        title: "Courier Service System",
+        summary:
+          "Scalable courier management platform with role-based access and end-to-end delivery workflows.",
+        highlights: [
+          "Role-based access for Admin, Manager, Customer, and Driver",
+          "RESTful APIs for parcel booking, tracking, and delivery management",
+          "Integrated Stripe payments and SMTP notifications",
+        ],
         imageUrl: Project1,
         emoji: "🚀",
         category: "fullstack",
-        tags: ["React.js", "Css3", "Node.js", "LocalStorage", "Express.js"],
-        liveUrl: "https://api-tester-v2-0-frontend.vercel.app",
-        githubUrl: "https://github.com/npm-335i/Api-Tester-v2.0",
+        tags: ["React.js", "PostgreSQL", "SMTP", "Stripe", "Express.js"],
+        liveUrl: "https://m19logistics.com/",
+        githubUrl: "",
       },
 
       {
         id: 2,
-        title: "Auth System MERN",
-        description:
-          "Production-ready authentication system with account lockout, rate limiting, and secure JWT-based authentication",
+        title: "Elyxa AI – Smart Productivity & Tracking Platform",
+        summary:
+          "AI-powered productivity platform for goal tracking with smart chatbot assistance.",
+        highlights: [
+          "AI-based chatbot and smart plan generation for personalized assistance",
+          "Daily, weekly, and monthly goal tracking dashboard",
+          "OpenAI integration for intelligent user interactions",
+        ],
         imageUrl: Project2,
         emoji: "🔐",
         category: "fullstack",
-        tags: ["React", "Node.js", "MongoDB", "JWT", "Authentication"],
-        liveUrl: "https://auth-system-frontend-six.vercel.app/auth",
-        githubUrl: "https://github.com/npm-335i/Auth-System-MERN",
+        tags: ["React", "Express.js", "PostgreSQL", "OpenAI", "AI Integration"],
+        liveUrl: "https://elyxaai.com",
+        githubUrl: "",
       },
       {
         id: 3,
-        title: "MediCart - Online Pharmacy Store",
-        description:
-          "Modern frontend for an online medicine store with product browsing, shopping cart, and responsive design",
+        title: "C4R Auto Marketplace",
+        summary:
+          "Car listing marketplace for browsing vehicles and connecting buyers with sellers.",
+        highlights: [
+          "Search and filter by make, model, year, and price range",
+          "Seller listings with direct buyer enquiry system",
+          "Stripe payments and Cloudinary image management",
+        ],
         imageUrl: Project4,
         emoji: "💊",
         category: "frontend",
         tags: [
           "React",
-          "CSS",
-          "E-Commerce",
-          "Responsive",
-          "Theme",
-          "Animations",
+          "Express.js",
+          "PostgreSQL",
+          "Stripe",
+          "Cloudinary",
+          "Tailwind CSS",
         ],
-        liveUrl: "",
-        githubUrl: "https://github.com/npm-335i/MediCart-Frontend",
+        liveUrl: "https://c4r.co.uk/",
+        githubUrl: "",
       },
       {
         id: 4,
         title: "My Portfolio",
-        description:
-          "Modern 3D portfolio website with interactive UI, glass-morphism design, and immersive user experience",
+        summary:
+          "Modern 3D portfolio with interactive UI, glass-morphism, and immersive animations.",
+        highlights: [
+          "Interactive 3D elements powered by Three.js",
+          "Glass-morphism design with Framer Motion animations",
+          "Fully responsive across all device sizes",
+        ],
         imageUrl: Project5,
         emoji: "🧑‍💻",
         category: "frontend",
@@ -304,21 +327,76 @@ export const PortfolioContent = {
           "Responsive",
           "Animations",
         ],
-        liveUrl:
-          "https://portfolio-react-git-main-npm-335is-projects.vercel.app",
-        githubUrl: "https://github.com/npm-335i/Portfolio-React",
+        liveUrl: "",
+        githubUrl: "https://github.com/AlifTalha/Portfolio.git",
       },
       {
         id: 5,
-        title: "Website Blocker Tool",
-        description:
-          "Batch script tool to block/unblock websites by editing the hosts file",
+        title: "Crypto Trading & Wallet Platform",
+        summary:
+          "Crypto trading and wallet platform with real-time market data and secure transactions.",
+        highlights: [
+          "Real-time market data and portfolio tracking",
+          "Secure wallet and transaction capabilities",
+          "Web3 and blockchain integration",
+        ],
         imageUrl: Project3,
         emoji: "🚫",
         category: "other",
-        tags: ["Batch Scripting", "Hosts File", "Productivity"],
-        liveUrl: "",
-        githubUrl: "https://github.com/npm-335i/Site-Blocker-Batch-Project",
+        tags: ["React", "Express.js", "PostgreSQL", "Web3", "Blockchain"],
+        liveUrl: "https://rainbitx.com/home",
+        githubUrl: "",
+      },
+      {
+        id: 6,
+        title: "Real Estate Investment & Property Management Platform",
+        summary:
+          "Real estate investment and property management platform with role-based workflows.",
+        highlights: [
+          "Property listing, booking, and management features",
+          "Role-based system for Buyer, Seller, Investor, and Builder",
+          "Stripe payments and Cloudinary media handling",
+        ],
+        imageUrl: Project6,
+        emoji: "🚫",
+        category: "fullstack",
+        tags: ["React", "Express.js", "PostgreSQL", "Stripe", "Cloudinary"],
+        liveUrl: "https://skyridgegroup.com/",
+        githubUrl: "",
+      },
+      {
+        id: 7,
+        title: "Property Management & Tenant Portal",
+        summary:
+          "Property management portal for landlords and tenants with secure document access.",
+        highlights: [
+          "Secure client login with property and tenancy documents",
+          "Financial statements and rental management data",
+          "Real-time access to property information",
+        ],
+        imageUrl: Project7,
+        emoji: "🚫",
+        category: "fullstack",
+        tags: ["React", "Nest.js", "PostgreSQL", "Cloudinary", "Tailwind CSS"],
+        liveUrl: "https://mccannandcurran.com/",
+        githubUrl: "",
+      },
+      {
+        id: 8,
+        title: "Real Estate Marketplace & Property Service Platform",
+        summary:
+          "Real estate marketplace for verified properties and related services.",
+        highlights: [
+          "Search verified properties and explore listings",
+          "Request properties and access buying/selling services",
+          "Renovation, construction, and interior decoration services",
+        ],
+        imageUrl: Project8,
+        emoji: "🚫",
+        category: "fullstack",
+        tags: ["React", "Nest.js", "PostgreSQL", "AWS S3", "Tailwind CSS"],
+        liveUrl: "https://prodev.property-file.com/",
+        githubUrl: "",
       },
     ],
   },
