@@ -338,5 +338,6 @@ export default function Hero() {
         </motion.div>
       </div>
     </section>
+    //TODO: Add tech stack section
   );
 }
