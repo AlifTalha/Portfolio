@@ -49,18 +49,20 @@ export const PortfolioContent = {
       { number: "500+", label: "Commits" },
     ],
     technologies: [
-      "MongoDB",
+      "PostgreSQL",
       "Express.js",
       "React",
-      "Node.js",
-      "JavaScript",
-      "HTML5",
-      "CSS3",
-      "REST APIs",
+      "Nest.js",
+      "Bootstrap",
       "Git",
       "GitHub",
-      "VS Code",
+      "Docker",
       "Postman",
+      "Prisma",
+      "Redis",
+      "VPS",
+      "ASP.NET",
+      "Linux",
     ],
   },
 
@@ -400,6 +402,30 @@ export const PortfolioContent = {
       },
     ],
   },
+
+  socialSidebar: [
+    {
+      name: "GitHub",
+      url: "https://github.com/AlifTalha",
+      icon: "github",
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/aliftalha/",
+      icon: "linkedin",
+    },
+    {
+      name: "Twitter",
+      url: "https://twitter.com/",
+      icon: "twitter",
+    },
+    {
+      name: "Email",
+      url: "mailto:uzaaiaamirr@gmail.com",
+      icon: "globe",
+    },
+  ],
+
   contact: {
     tag: "Contact",
     title: "Let's work",
@@ -444,7 +470,7 @@ export const PortfolioContent = {
   },
 
   footer: {
-    brand: "ALIF HOSSAIN TALHA.",
+    brand: "ALIF HOSSAIN TALHA",
     text: "Building elegant digital experiences with passion and creativity.",
     links: [
       { label: "Home", href: "#home" },

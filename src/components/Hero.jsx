@@ -281,31 +281,6 @@ export default function Hero() {
               </div>
             ))}
           </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="tech-stack"
-          >
-            <p className="tech-label">
-              <span className="tech-dot" />
-              Tech Stack
-            </p>
-            <div className="tech-grid">
-              {hero.technologies.map((tech, index) => (
-                <motion.span
-                  key={index}
-                  className="tech-tag"
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                >
-                  {tech}
-                  <span className="tech-glow" />
-                </motion.span>
-              ))}
-            </div>
-          </motion.div>
         </div>
 
         <motion.div

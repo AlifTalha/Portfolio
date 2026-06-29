@@ -1,11 +1,13 @@
 import { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import TechMarquee from "./components/TechMarquee";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import SocialSidebar from "./components/SocialSidebar";
 import "./App.css";
 
 function App() {
@@ -84,7 +86,9 @@ function App() {
       <div className="orb-global orb-global-3" />
 
       <Navbar />
+      <SocialSidebar />
       <Hero />
+      <TechMarquee />
       <About />
       <Skills />
       <Projects />

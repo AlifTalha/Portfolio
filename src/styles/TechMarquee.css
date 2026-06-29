@@ -1,0 +1,133 @@
+.tech-marquee {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 10px 0;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  background: rgba(6, 6, 14, 0.4);
+}
+
+.tech-marquee-glow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(186, 128, 255, 0.06),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: marqueeGlow 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes marqueeGlow {
+  0%,
+  100% {
+    background-position: 200% center;
+    opacity: 0.4;
+  }
+  50% {
+    background-position: -200% center;
+    opacity: 1;
+  }
+}
+
+.tech-marquee-fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.tech-marquee-fade-left {
+  left: 0;
+  background: linear-gradient(to right, #06060e, transparent);
+}
+
+.tech-marquee-fade-right {
+  right: 0;
+  background: linear-gradient(to left, #06060e, transparent);
+}
+
+.tech-marquee-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.tech-marquee-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.tech-marquee-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 5px;
+  flex-shrink: 0;
+}
+
+.tech-marquee-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 14px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  cursor: default;
+}
+
+.tech-marquee-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(186, 128, 255, 0.5);
+  animation: dotPulse 2s ease-in-out infinite;
+}
+
+@keyframes dotPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.7);
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-marquee {
+    padding: 8px 0;
+  }
+
+  .tech-marquee-fade {
+    width: 60px;
+  }
+
+  .tech-marquee-tag {
+    padding: 4px 12px;
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  .tech-marquee-dot {
+    width: 4px;
+    height: 4px;
+  }
+}

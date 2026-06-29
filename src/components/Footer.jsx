@@ -18,12 +18,16 @@ export default function Footer() {
 
         <div className="footer-links">
           {footer.links.map((link, index) => (
-            <a key={index} href={link.href}>{link.label}</a>
+            <a key={index} href={link.href}>
+              {link.label}
+            </a>
           ))}
         </div>
 
         <div className="footer-bottom">
-          <span>© {currentYear} {footer.brand.replace('.', '')}. {footer.copyright}</span>
+          <span>
+            © {currentYear} {footer.brand.replace(".", "")}. {footer.copyright}
+          </span>
           <span className="footer-heart">{footer.heart}</span>
         </div>
       </div>
