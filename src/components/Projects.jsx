@@ -140,9 +140,6 @@ export default function Projects() {
               </div>
 
               <div className="modal-body">
-                <span className="modal-category">
-                  {projects.categories.find((c) => c.id === selectedProject.category)?.label || selectedProject.category}
-                </span>
                 <h2 className="modal-title">{selectedProject.title}</h2>
                 <div className="modal-description">
                   <p className="modal-summary">{selectedProject.summary}</p>
@@ -153,12 +150,6 @@ export default function Projects() {
                       ))}
                     </ul>
                   )}
-                </div>
-                
-                <div className="modal-tags">
-                  {selectedProject.tags.map((tag, i) => (
-                    <span key={i} className="modal-tag">{tag}</span>
-                  ))}
                 </div>
 
                 <div className="modal-actions">

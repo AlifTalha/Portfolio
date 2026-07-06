@@ -60,6 +60,8 @@
   width: 220px;
   height: 220px;
   flex-shrink: 0;
+  cursor: pointer;
+  will-change: transform;
 }
 
 .profile-image {
@@ -72,6 +74,16 @@
   z-index: 2;
   border: 3px solid rgba(186, 128, 255, 0.25);
   background: var(--bg-secondary);
+  transition:
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.profile-image-wrapper:hover .profile-image {
+  border-color: rgba(186, 128, 255, 0.55);
+  box-shadow:
+    0 16px 40px rgba(186, 128, 255, 0.35),
+    0 0 0 6px rgba(186, 128, 255, 0.12);
 }
 
 .profile-ring {
@@ -95,6 +107,12 @@
   animation: profileRingSpin 4s linear infinite;
   pointer-events: none;
   z-index: 3;
+  transition: opacity 0.35s ease;
+}
+
+.profile-image-wrapper:hover .profile-ring {
+  animation-duration: 1.5s;
+  opacity: 1;
 }
 
 .profile-glow {
@@ -109,6 +127,20 @@
   );
   pointer-events: none;
   z-index: 1;
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.profile-image-wrapper:hover .profile-glow {
+  transform: scale(1.2);
+  opacity: 1;
+  background: radial-gradient(
+    circle,
+    rgba(186, 128, 255, 0.45) 0%,
+    rgba(186, 128, 255, 0.15) 45%,
+    transparent 72%
+  );
 }
 
 @keyframes profileRingSpin {
