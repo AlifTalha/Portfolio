@@ -10,6 +10,7 @@ import Research from "./components/Research";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SocialSidebar from "./components/SocialSidebar";
+import CustomCursor from "./components/CustomCursor";
 import "./App.css";
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
       <div className="orb-global orb-global-2" />
       <div className="orb-global orb-global-3" />
 
+      <CustomCursor />
       <Navbar />
       <SocialSidebar />
       <Hero />
