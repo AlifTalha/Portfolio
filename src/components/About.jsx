@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import PortfolioContent from "../data/PortfolioContent";
-import profileImage from "../assets/images/alif.png";
+import profileImage from "../assets/images/photo.png";
 import "../styles/About.css";
 
 export default function About() {
