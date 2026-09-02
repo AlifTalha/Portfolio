@@ -43,6 +43,34 @@ const getInitials = (company) =>
     .join("")
     .toUpperCase() || company[0];
 
+const parseYearMonth = (value) => {
+  const [year, month] = value.split("-").map(Number);
+  return { year, month };
+};
+
+const formatDuration = (startDate, endDate) => {
+  const start = parseYearMonth(startDate);
+  const now = new Date();
+  const end = endDate
+    ? parseYearMonth(endDate)
+    : { year: now.getFullYear(), month: now.getMonth() + 1 };
+
+  let months =
+    (end.year - start.year) * 12 + (end.month - start.month) + 1;
+  if (months < 1) months = 1;
+
+  const years = Math.floor(months / 12);
+  const remainingMonths = months % 12;
+  const parts = [];
+
+  if (years) parts.push(years === 1 ? "1 yr" : `${years} yrs`);
+  if (remainingMonths) {
+    parts.push(remainingMonths === 1 ? "1 mo" : `${remainingMonths} mos`);
+  }
+
+  return parts.join(" ") || "1 mo";
+};
+
 export default function Experience() {
   const { experience } = PortfolioContent;
 
@@ -129,6 +157,9 @@ export default function Experience() {
                   <span className="experience-meta-chip">
                     <CalendarIcon />
                     {job.period}
+                    <span className="experience-duration">
+                      · {formatDuration(job.startDate, job.endDate)}
+                    </span>
                   </span>
                   <span className="experience-meta-chip">
                     <LocationIcon />

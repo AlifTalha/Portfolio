@@ -327,6 +327,11 @@
   flex-shrink: 0;
 }
 
+.experience-duration {
+  color: var(--text-secondary);
+  opacity: 0.85;
+}
+
 .experience-divider {
   height: 1px;
   background: linear-gradient(

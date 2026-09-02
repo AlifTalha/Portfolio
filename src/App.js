@@ -95,8 +95,8 @@ function App() {
       <TechMarquee />
       <About />
       <Skills />
-      <Projects />
       <Experience />
+      <Projects />
       <Research />
       <Contact />
       <Footer />

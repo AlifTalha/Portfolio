@@ -254,6 +254,8 @@ export const PortfolioContent = {
         role: "Junior Software Engineer",
         company: "MakTech Solution Limited",
         period: "September 2025 – Present",
+        startDate: "2025-09",
+        endDate: null,
         location: "On-site",
         current: true,
         highlights: [
@@ -269,6 +271,8 @@ export const PortfolioContent = {
         role: "Software Engineer",
         company: "Adplay Technology Limited",
         period: "February 2025 – August 2025",
+        startDate: "2025-02",
+        endDate: "2025-08",
         location: "On-site",
         current: false,
         highlights: [
@@ -284,6 +288,8 @@ export const PortfolioContent = {
         role: "Backend Developer",
         company: "Generative AI",
         period: "September 2024 – January 2025",
+        startDate: "2024-09",
+        endDate: "2025-01",
         location: "Remote",
         current: false,
         highlights: [
@@ -572,8 +578,8 @@ export const PortfolioContent = {
     links: [
       { label: "Home", href: "#home" },
       { label: "About", href: "#about" },
-      { label: "Projects", href: "#projects" },
       { label: "Experience", href: "#experience" },
+      { label: "Projects", href: "#projects" },
       { label: "Research", href: "#research" },
       { label: "Contact", href: "#contact" },
     ],
@@ -586,8 +592,8 @@ export const PortfolioContent = {
     links: [
       { label: "About", href: "#about" },
       { label: "Skills", href: "#skills" },
-      { label: "Projects", href: "#projects" },
       { label: "Experience", href: "#experience" },
+      { label: "Projects", href: "#projects" },
       { label: "Research", href: "#research" },
       { label: "Contact", href: "#contact" },
     ],
