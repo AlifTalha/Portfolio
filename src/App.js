@@ -1,4 +1,5 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
+import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TechMarquee from "./components/TechMarquee";
@@ -11,12 +12,15 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SocialSidebar from "./components/SocialSidebar";
 import CustomCursor from "./components/CustomCursor";
+import Splash from "./components/Splash";
 import "./App.css";
 
 function App() {
+  const [showSplash, setShowSplash] = useState(true);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
   const appRef = useRef(null);
+  const finishSplash = useCallback(() => setShowSplash(false), []);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -87,6 +91,10 @@ function App() {
       <div className="orb-global orb-global-1" />
       <div className="orb-global orb-global-2" />
       <div className="orb-global orb-global-3" />
+
+      <AnimatePresence>
+        {showSplash && <Splash key="splash" onFinish={finishSplash} />}
+      </AnimatePresence>
 
       <CustomCursor />
       <Navbar />
