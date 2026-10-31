@@ -6,6 +6,8 @@ import Project5 from "../assets/images/portfolio.png";
 import Project6 from "../assets/images/skyridge.png";
 import Project7 from "../assets/images/mccann.png";
 import Project8 from "../assets/images/property-file.png";
+import Project9 from "../assets/images/news.png";
+import Project10 from "../assets/images/astro.png";
 import paperImage from "../assets/images/paper.jpg";
 export const PortfolioContent = {
   about: {
@@ -334,6 +336,23 @@ export const PortfolioContent = {
         liveUrl: "https://m19logistics.com/",
         githubUrl: "",
       },
+      {
+        id: 9,
+        title: "News Portal",
+        summary:
+          "Next.js news platform with AI summaries, live headlines, and a full editorial CMS.",
+        highlights: [
+          "Breaking news ticker, categories, bookmarks, comments, and dark/light mode",
+          "OpenAI article summarizer, admin CMS, and newsletter with secure unsubscribe",
+          "JWT and Google OAuth, ISR caching, and dynamic SEO sitemap",
+        ],
+        imageUrl: Project9,
+        emoji: "📰",
+        category: "fullstack",
+        tags: ["Next.js", "React", "PostgreSQL", "Prisma", "OpenAI", "Tailwind CSS"],
+        liveUrl: "https://news-portal-alif.vercel.app/",
+        githubUrl: "",
+      },
 
       {
         id: 2,
@@ -466,6 +485,23 @@ export const PortfolioContent = {
         category: "fullstack",
         tags: ["React", "Nest.js", "PostgreSQL", "AWS S3", "Tailwind CSS"],
         liveUrl: "https://prodev.property-file.com/",
+        githubUrl: "",
+      },
+      {
+        id: 10,
+        title: "GadgetHub",
+        summary:
+          "Astro eCommerce storefront for phones, laptops, PCs, and tech accessories.",
+        highlights: [
+          "Browse products by brand and category with favorites",
+          "Phones, laptops, tablets, networking, and accessories",
+          "Fast static storefront built with Astro",
+        ],
+        imageUrl: Project10,
+        emoji: "🛒",
+        category: "frontend",
+        tags: ["Astro", "eCommerce", "JavaScript"],
+        liveUrl: "https://astro-project-roan.vercel.app/",
         githubUrl: "",
       },
     ],
